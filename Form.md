@@ -31,8 +31,10 @@ function NewForm() {
 
 - `useRef`
 
-  - input된 값을 읽어오는데 주로 사용
+  - `.current` 프로퍼티로 전달된 인자로 초기화된 변경 가능한 ref 객체 반환 
 
-  - input에 `ref`로 binding
+  - 내용이 변경될 때 알려주지는 않음(리 랜더링 발생x)
+  
+  - input에 `ref`값을 binding
   - 현재 값을 가져오려면 `.current.value`
   - 필요한 데이터 수 만큼 `const titleInputRef = useRef();`와 같이 정의하여 사용
