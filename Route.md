@@ -145,7 +145,7 @@ export default function Test() {
   const move = () => {
     navigate('/test', {
       state: {name:ljm},
-      replace:true // 리다이렉트
+      replace:true // 뒤로가기 하여도 직전의 페이지로 못오게 막음
     });
   };
   return (
